@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="pfp">
+        <img class="pfp-img" src="imgs/default-avi-pfp.png" alt="profile picture">
+        <div class="add-pfp"> <u>Profile picture</u></div>
+    </div>
+    <div class="welcome">
+        <div id="welcome-plus-name">Welcome, !</div>
+        <div>Edit and manage your profile</div>
+    </div>
+
+    <div class="profile-info">
+        <div>My Profile</div>
+        <form class="profile-form" action="">
+            <div>
+                <label for="name">Name* : </label>
+                <input type="text" id="name" name="name">
+            </div> <br>
+            <div>
+                <label for="nationality">Nationality : </label>
+                <input type="text" name="nationality" id="nationality">
+            </div>
+             <br>
+            <div>
+                <label for="age">Age* : </label>
+                <input type="number" name="age" id="age" min="18">
+            </div>
+             <br>
+            <div>
+                <label for="email">Email* : </label>
+                <input type="email" name="email" id="email" required> 
+            </div>
+             <br>
+            <div>
+                <label for="phone">Phone : </label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <br>
+            <br>
+            <button type="submit">Save</button>
+            <button type="reset">Discard</button>
+        </form>
+        <br>
+        <br>
+    </div>
+    <div class="password-info">
+          <div>Change Password </div>
+          <br>
+          <form class="password-form" action="">
+            <div>
+                <label for="current-password">Current Password* : </label>
+                <input type="password" name="current-password" id="current-password" required>
+              </div> <br> 
+              <div>
+                <label for="new-password">New Password* : </label>
+                <input type="password" name="new-password" id="new-password" required minlength="8">
+                <div><span>must be atleast 8 character</span></div>
+              </div> <br>
+              <div>
+                <label for="confirm-password">Confirm Password* : </label>
+                <input type="password" name="confirm-password" id="confirm-password" required>
+              </div>
+              <br>
+              <br>
+              <button type="submit">Save</button>
+              <button type="reset">Discard</button>
+          </form>  <br>
+    </div>
+    <div class="page-button">
+        <form action="home.html">
+            <button class="return-button">Return</button>
+        </form>
+
+    </div>
+</body>
+</html>
