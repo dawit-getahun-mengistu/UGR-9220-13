@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign - in</title>
+    <!-- fontawesome kit code -->
+    <script src="https://kit.fontawesome.com/edb6ed9f7f.js" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="../cssjs/sign-in-sign-up.css">
 </head>
 <body>
     <div class="sign-box">
         <div class="form-box">
             <div class="form">
-                <div>
+                <!-- added class name form-head -->
+                <div class="form-head">
                     <h3>Welcome Back!</h3>
-                    Please enter your details
+                    <div>Please enter your details</div>
                 </div>
+                
+                
                 <br>
-                <form action="">
+                <!-- gave id to form -->
+                <!-- modified names and ids for inputs -->
+                <form id="sign-in-form" onsubmit="validateSignIn()">
                     <div>
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                        <label for="sign-in-email">Email</label><br>
+                        <input type="email" id="sign-in-email" name="sign-in-email" placeholder="Enter Your Email" required>
                     </div><br>
                     <div>
-                        <label for="password">Password</label><br>
-                        <input type="password" id="password" name="password" required><br>
+                        <label for="sign-in-password">Password</label><br>
+                        <input type="password" id="sign-in-password" name="sign-in-password" required><br>
                         <span id="forgot-password"><u>forgot password?</u></span>
                     </div>
                     <br>
@@ -40,10 +49,14 @@
         <div class="logo-box">
             <a href="../home.html"><img class="logo" src="../imgs/logo-1.png" alt="Company-logo"></a>
         </div>
-                <div class="audio">
-            <audio src="../audio/Ice & Fire - King Canyon.mp3" controls autoplay muted loop>
-            </audio>
-        </div>
+        
     </div>
+    <!-- removed audio out of div -->
+    <div class="audio">
+        <audio src="../audio/Ice & Fire - King Canyon.mp3" controls autoplay muted loop>
+        </audio>
+    </div>
+    <script src="../cssjs/index.js"></script>
 </body>
+
 </html>
