@@ -182,5 +182,12 @@
         </div>
     </footer>
     <script src="cssjs/index.js"></script>
+    <script>
+        if (currentUser != null){
+            document.getElementById('home-sign-in').style.visibility="hidden";
+        }else{
+            document.getElementById('home-sign-in').style.visibility="visible";
+        }
+    </script>  
 </body>
 </html>
