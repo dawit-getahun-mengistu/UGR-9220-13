@@ -129,7 +129,7 @@ function logOut(e){
     localStorage.removeItem('signedIn');
     localStorage.setItem('signedIn',false); //update user status
     // window.location.replace('home.html');
-    location.assign('../home.html')
+    location.assign('../../index.html')
     return
 }
 
@@ -156,7 +156,7 @@ function validateUserInfoChange(e){
         let stringUser = JSON.stringify(currentUser);
         localStorage.setItem('curr',stringUser);
 
-        location.assign('../home.html')
+        location.assign('../../index.html')
         return
     }else{
         alert('please fill in all fields')
@@ -179,7 +179,7 @@ function validatePasswordChange(e){
             currentUser.password=newPassword;
             let stringUser = JSON.stringify(currentUser);
             localStorage.setItem('curr',stringUser);
-            location.assign('../home.html')
+            location.assign('../../index.html')
         }else{
             alert('password mismatch')
             return;
